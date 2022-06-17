@@ -6,3 +6,74 @@
     background: linear-gradient(90deg, #2e2e2e, #000000);
     background-repeat: repeat;
 }
+
+.active{
+    font-weight: bold;
+}
+
+.logo-image{
+    height: 15em;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.highlighted{
+    color: #8d60ff;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: 0.2s ease-in-out;
+}
+
+.highlighted:hover {
+    color: #7e26ff;
+    opacity: 1;
+}
+
+.contact-links {
+    color: white;
+    background: #ffffff11;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-links:hover {
+    color: #8d60ff;
+    background-color: white;
+}
+
+.highlighted-navs a {
+    color: white;
+    background-color: #8d60ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    margin: 2px;
+}
+
+.highlighted-navs .nav-pills {
+    margin-left: 25px;
+}
+
+.highlighted-navs a:active, .highlighted-navs a:focus, .nav-pills .nav-link.active {
+    color: white;
+    background-color: #8d60ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.highlighted-navs a:hover {
+    color: #8d60ff;
+    background-color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-img {
+    width: 40px;
+    height: 35px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}

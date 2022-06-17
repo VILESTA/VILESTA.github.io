@@ -10,8 +10,7 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-    </div>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-transparent" id="mainnavbar">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark bg-opacity-10 sticky-top rounded mx-5 mt-2" id="mainnavbar">
         <div class="container-lg">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,21 +28,50 @@
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand fw-bold text-decoration-none" href="#mainnavbar">Yuriy Tkachik</a>
+            <a class="navbar-brand fw-bold text-decoration-none">Yuriy Tkachik</a>
         </div>
     </nav>
 
-    <div class="container-lg p-5">
-        <div class="row row-cols-2 justify-content-around">
-            <div class="col align-self-center">
-                <p class="h1 fw-bold text-light">Hello!</p>
-                <p class="h4 text-light">I'm <a class="fw-bold text-decoration-none text-info">C#/.NET Oriented Software Developer</a></p>
-                <p class="h4 text-light">And this is my <a class="fw-bold text-decoration-none text-info">Portfolio</a></p>
+    <div class="container-fluid p-5">
+        <div class="row">
+
+            <div class="col-3 d-md-none d-lg-block">
+                <nav id="navpoints" class="navbar bg-transparent text-light flex-column align-items-stretch p-3 sticky-top">
+                    <nav class="nav nav-pills flex-column highlighted-navs">
+                        <a class="nav-link" href="#hello">Hello</a>
+                        <a class="nav-link" href="#info">Info</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#first-point">First point</a>
+                        </nav>
+                    </nav>
+                </nav>
             </div>
-            <div class="col-3 invisible">
-                <img class="w-100" src="Logo.png" />
+
+            <div class="container-fluid col">
+                <div data-bs-spy="scroll" data-bs-target="#navpoints" data-bs-smooth-scroll="true" tabindex="0" class="text-light col">
+                    <div class="row row-cols-2 mb-5">
+                        <div class="col align-self-center">
+                            <p class="h1 fw-bold text-light" id="hello">Hello!</p>
+                            <p class="h4 text-light">I'm <a class="highlighted">C#/.NET Oriented Software Developer</a></p>
+                            <p class="h4 text-light">And this is my <a class="highlighted">Portfolio</a></p>
+                        </div>
+                        <div class="col mx-auto w-auto">
+                            <img class="logo-image" src="Logo.png" />
+                        </div>
+                    </div>
+                    <p class="h1 fw-bold text-light mt-5 mb-3" id="info">I'll let you know some information about me</p>
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <p class="h1 fw-bold text-light" id="first-point">And here's the first one. Who am I?</p>
+                            <p class="h4 text-light">I'm <a class="highlighted">Yuriy Tkachik</a> and I'm <a class="highlighted">18</a> years old.</p>
+                            <p class="h4 text-light">I'm from <a class="highlighted">Belarus</a>. <a class="highlighted">  </a> </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
+        
     </div>
 </body>
 </html>
