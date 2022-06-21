@@ -11,6 +11,14 @@
     font-weight: bold;
 }
 
+.navbar{
+    z-index: 150;
+}
+
+.navigation-links{
+    padding-top: 150px;
+}
+
 .logo-image{
     height: 15em;
     background-size: cover;
@@ -33,14 +41,11 @@
 
 .contact-links {
     color: white;
-    background: #ffffff11;
-    border: none;
     transition: 0.2s ease-in-out;
 }
 
 .contact-links:hover {
-    color: #8d60ff;
-    background-color: white;
+    color: #111111;
 }
 
 .highlighted-navs a {
@@ -71,8 +76,15 @@
 }
 
 .contact-img {
-    width: 40px;
-    height: 35px;
+    height: 30px;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-img-container{  
+    width: 100px;  
+    margin: 0;
     padding: 5px;
     background-color: white;
     border-radius: 5px;

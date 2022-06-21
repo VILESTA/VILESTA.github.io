@@ -10,7 +10,7 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark bg-opacity-25 sticky-top rounded mx-5 mt-2" id="mainnavbar">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top rounded mx-5 mt-2" id="mainnavbar">
         <div class="container-lg">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,8 +23,14 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="blog.html">Blog</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">My contacts</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          My contacts
+                        </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item contact-links" href="mailto:tkachik.2003@gmail.com?subject=Contact%20Me&body=Hello!%0AYour%20portfolio%20is%20really%20cool!">Gmail: tkachik.2003@gmail.com</a></li>
+                          <li><a class="dropdown-item contact-links" href="https://vk.com/v.yuri">VK: https://vk.com/v.yuri</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -33,10 +39,92 @@
     </nav>
 
     <p class="h1 fw-bold text-light mx-5 mt-3 mb-4">My projects</p>
-    <div class="container-lg px-5">
-        <div class="row row-cols-5">
+    <div class="container-lg px-5 pb-5">
+        <div class="row row-cols-lg-2 row-cols-md-1">
+
             <div class="col p-1">
                 <div class="card text-center">
+                    <p src="" class="card-img-top pt-5">No image for now, check the image later</p>
+                    <div class="card-header">
+                        Unity Game
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">DESPAIR: CALL OF THE VOID</h5>
+                        <p class="card-text">My first big RPG game with a fantastic world story.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        In Development | ...
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col p-1">
+                <div class="card text-center">
+                    <p src="" class="card-img-top pt-5">No image for now, check the image later</p>
+                    <div class="card-header">
+                        UWP Application
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Rapture Anime App</h5>
+                        <p class="card-text">UWP Anime Cinema App.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        In Development | ...
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col p-1">
+                <div class="card text-center">
+                    <img src="projects/multisync-player.png" class="card-img-top">
+                    <div class="card-header">
+                        UWP Application
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">MultiSync Player</h5>
+                        <p class="card-text">Comfortable UWP music player.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Released | 16.06.2022
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col p-1">
+                <div class="card text-center">
+                    <img src="projects/pro-react.png" class="card-img-top">
+                    <div class="card-header">
+                        UWP Application
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ProReact</h5>
+                        <p class="card-text">App to train your reaction.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Released | 16.04.2022
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col p-1">
+                <div class="card text-center">
+                    <img src="projects/shift-companion.png" class="card-img-top">
+                    <div class="card-header">
+                        UWP Application
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Shift Companion</h5>
+                        <p class="card-text">Companion for your work shifts.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Released | 16.04.2022
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-1">
+                <div class="card text-center">
+                    <img src="projects/Ongaku.png" class="card-img-top">
                     <div class="card-header">
                         Web-site
                     </div>
@@ -45,7 +133,7 @@
                         <p class="card-text">My own music web-site.</p>
                     </div>
                     <div class="card-footer text-muted">
-                        21.12.2021
+                        Released | 21.12.2021
                     </div>
                 </div>
             </div>
